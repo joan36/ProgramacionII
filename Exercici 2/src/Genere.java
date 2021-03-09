@@ -1,0 +1,3 @@
+public enum Genere {
+    ACCIO, AUTOR, CIFI, COMEDIA, DRAMA, POLICIACA , TERROR;
+}
