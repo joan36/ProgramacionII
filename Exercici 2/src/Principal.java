@@ -1,19 +1,26 @@
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 
 public class Principal {
     public static void main(String[] args) {
-        try {
-            //Variables
-            Pelicula pelicula = new Pelicula();
-            ObjectOutputStreamFile outputStream = new ObjectOutputStreamFile();
-            ObjectInputStreamFile objectInputStream = new ObjectInputStreamFile();
+
 
 
             for (int i = 0; i < 1; i++) {
                 System.out.println("-------------------Pelicula " + i + " ------------------------");
-                recoirDades();
 
+                System.out.println("Nom pelicula");
+                String titol=(LT.readLine());
+
+                System.out.println("Director Pelicula");
+                String director=(LT.readLine());
+
+                System.out.println("Genere");
+                System.out.println(java.util.Arrays.asList(Genere.values()));
+                Genere genere = Genere.valueOf(LT.readLine().toUpperCase());
+
+                System.out.println("Any Estrena");
+                int any=(LT.readInt());
+
+                Pelicula pelicula=new Pelicula(titol,director,any,genere);
                 ObjectOutputStreamFile.esciribrDatos(pelicula);
 
             }
@@ -25,15 +32,15 @@ public class Principal {
             ObjectInputStreamFile.leerDatos();
 
 
-        } catch (Exception e) {
 
-        }
     }
 
     public static void recoirDades() {
+        //Variables
+        Pelicula pelicula = new Pelicula();
 
         System.out.println("Nom pelicula");
-        Pelicula.setTitol(LT.readLine());
+        pelicula.setTitol(LT.readLine());
 
         System.out.println("Director Pelicula");
         Pelicula.setNomDirector(LT.readLine());

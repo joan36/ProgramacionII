@@ -1,4 +1,6 @@
-public class Pelicula {
+import java.io.Serializable;
+
+public class Pelicula implements Serializable {
 
     private static String titol;
     private static String nomDirector;
@@ -49,6 +51,31 @@ public class Pelicula {
 
     public static void setGenere(Genere genere) {
         Pelicula.genere = genere;
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    @Override
+    public String toString() {
+        return "Pelicula{}";
     }
 }
 
