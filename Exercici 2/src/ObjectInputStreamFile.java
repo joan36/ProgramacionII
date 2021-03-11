@@ -1,23 +1,22 @@
 import java.io.*;
 
 public class ObjectInputStreamFile {
-    public static void leerDatos(){
+    public static void leerDatos() {
         try {
+            FileInputStream in = new FileInputStream("peliculas.dat");
+            ObjectInputStream ois = new ObjectInputStream(in);
 
-            FileInputStream entrada=new FileInputStream("peliculas.dat");
-            ObjectInputStream ois=new ObjectInputStream(entrada);
+            Pelicula p = (Pelicula) ois.readObject();
+            while (!p.isSentinel()) {
 
-            Pelicula p=(Pelicula)ois.readObject();
-            while (!p.equals(Pelicula.centinela)){
                 System.out.println(p);
-                p=(Pelicula)ois.readObject();
+                p = (Pelicula) ois.readObject();
             }
-            entrada.close();
+            in.close();
 
-        } catch (ClassNotFoundException | IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("ERROR: " + e.getMessage());
         }
-
 
     }
 }
