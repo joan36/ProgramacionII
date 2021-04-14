@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f132fa71-9698-4e3f-847b-5a7d9d948ba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exercici4.1/Exercici4.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4.1/src/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4.1/src/Genere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4.1/src/LT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4.1/src/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4/Exercici4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4/src/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4/src/Genere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4/src/LT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exercici4/src/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercici5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Genere.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pelicula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Canso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Disc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsOu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerDiscs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerTxtCansonsIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exercici3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,5 +73,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1617550190636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1617550190636" />
   </component>
 </project>
