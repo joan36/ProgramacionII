@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="130_Escacs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/130_Escacs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
