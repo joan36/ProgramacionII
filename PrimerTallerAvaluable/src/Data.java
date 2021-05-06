@@ -1,3 +1,5 @@
+import java.text.ParseException;
+
 public class Data {
     private int dia;
     private int mes;
@@ -15,6 +17,11 @@ public class Data {
         this.hora = hora;
         this.minuts = minuts;
     }
+
+    public Data(String s) {
+    }
+
+
 
 
     public int getDia() {
@@ -57,31 +64,46 @@ public class Data {
         this.minuts = minuts;
     }
 
-    public static Data creadData(String dataString){
-        char[] data=dataString.toCharArray();
-        Data d=new Data();
-        //Dia
-        String dia= String.valueOf(data[0])+String.valueOf(data[1]);
-        d.setDia(Integer.parseInt(dia));
-        //Mes
-        String mes= String.valueOf(data[3])+String.valueOf(data[4]);
-        d.setMes(Integer.parseInt(mes));
-        //Any
-        String any= String.valueOf(data[6])+String.valueOf(data[7]);
-        d.setAny(Integer.parseInt(any));
-
-        //Hora
-        String hora= String.valueOf(data[9])+String.valueOf(data[10]);
-        d.setHora(Integer.parseInt(hora));
-
-        //Minuts
-        String minuts= String.valueOf(data[12])+String.valueOf(data[13]);
-        d.setMinuts(Integer.parseInt(minuts));
-        return d;
+    public static void creadData(String dataString) throws ParseException {
     }
+
+    public static Data objecteData(String d1) {
+        int dia, mes, any, hora, minut;
+        char[] date1 = d1.toCharArray();
+
+        for (int i = 0; i < date1.length; i++) {
+            if (date1[i] == ' ' || date1[i] == ':') {
+                date1[i] = '/';
+            }
+        }
+
+        String[] Novadata1 = String.valueOf(date1).split("/");
+        dia=Integer.parseInt(Novadata1[0]);
+        mes=Integer.parseInt(Novadata1[1]);
+        any=Integer.parseInt(Novadata1[2]);
+        hora=Integer.parseInt(Novadata1[3]);
+        minut=Integer.parseInt(Novadata1[4]);
+
+        Data data=new Data(dia,mes,any,hora,minut);
+
+        return data;
+    }
+
+    public static boolean compararData(Data d1, Data d2){
+
+        String num1=String.valueOf(d1.any)+String.valueOf(d1.mes)+String.valueOf(d1.dia)+String.valueOf(d1.hora)+String.valueOf(d1.minuts);
+        String num2=String.valueOf(d1.any)+String.valueOf(d1.mes)+String.valueOf(d1.dia)+String.valueOf(d1.hora)+String.valueOf(d1.minuts);
+
+        if (Integer.parseInt(num2) > Integer.parseInt(num1)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 
     @Override
     public String toString() {
-        return dia+"/"+mes+"/"+any+" "+hora+":"+minuts;
+        return dia + "/" + mes + "/" + any + " " + hora + ":" + minuts;
     }
 }

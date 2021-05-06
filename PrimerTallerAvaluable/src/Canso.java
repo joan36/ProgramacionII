@@ -1,4 +1,7 @@
-public class Canso {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Canso implements Serializable {
     private String titol;
     private String grup;
     private String album;
@@ -7,7 +10,7 @@ public class Canso {
     private String data;
 
     //Centinela
-    public static final Canso CENTINELA = new Canso("zzz","zzz","zzz","zzz",999,"99/99/99");
+    public static final Canso CENTINELA = new Canso("zzz","zzz","zzz","zzz",999, "11/11/11 11:11");
 
     //Constructor
     public Canso() {
@@ -21,7 +24,6 @@ public class Canso {
         this.anyEdicio = anyEdicio;
         this.data = data;
     }
-
 
     public String getTitol() {
         return titol;
@@ -71,8 +73,6 @@ public class Canso {
         this.data = data;
     }
 
-
-
     @Override
     public String toString() {
         return "Canso{" +
@@ -81,7 +81,22 @@ public class Canso {
                 ", album='" + album + '\'' +
                 ", genere='" + genere + '\'' +
                 ", anyEdicio=" + anyEdicio +
-                ", data=" + data +
+                ", data='" + data + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Canso canso = (Canso) o;
+        return anyEdicio == canso.anyEdicio && Objects.equals(titol, canso.titol) && Objects.equals(grup, canso.grup) && Objects.equals(album, canso.album) && Objects.equals(genere, canso.genere) && Objects.equals(data, canso.data);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titol, grup, album, genere, anyEdicio, data);
+    }
+
+
 }

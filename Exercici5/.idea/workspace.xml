@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f132fa71-9698-4e3f-847b-5a7d9d948ba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Canso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Disc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsOu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerDiscs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerTxtCansonsIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/Canso.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/Canso.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/FitxerCansonsOu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/FitxerCansonsOu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/FitxerTxtCansonsIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/FitxerTxtCansonsIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/out/production/PrimerTallerAvaluable/Principal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Canso.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Canso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsOu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerCansonsOu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerTxtCansonsIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/FitxerTxtCansonsIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerTallerAvaluable/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exercici3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrimerTallerAvaluable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,11 +73,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1617550190636">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1617550190636" />
   </component>
 </project>
