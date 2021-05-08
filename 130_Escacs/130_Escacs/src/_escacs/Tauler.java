@@ -14,6 +14,9 @@ public class Tauler extends JPanel {
     private static final int COSTAT = MAXIM / DIMENSIO;
     private static final Color BLANC = Color.WHITE;
     private static final Color NEGRE = Color.BLACK;
+    private float vermell = (float) Math.random();
+    private float verd = (float) Math.random();
+    private float blau = (float) Math.random();
 
     public Tauler() {
     }
@@ -27,11 +30,15 @@ public class Tauler extends JPanel {
             for (int j = 1; j <= DIMENSIO; j++) {
                 Rectangle2D.Float r =
                         new Rectangle2D.Float(x, y, COSTAT, COSTAT);
-                if ((i % 2 == 1 && j % 2 == 1) || (i % 2 == 0 && j % 2 == 0)) {
-                    g2d.setColor(BLANC);
+               /* if ((i % 2 == 1 && j % 2 == 1) || (i % 2 == 0 && j % 2 == 0)) {
+                    //g2d.setColor(BLANC);
+
                 } else {
-                    g2d.setColor(NEGRE);
-                }
+                    //g2d.setColor(NEGRE);
+                    g2d.setColor(new java.awt.Color(vermell,verd,blau));
+                }*/
+                g2d.setBackground(new Color(vermell,verd,blau));
+
                 g2d.fill(r);
                 x += COSTAT;
             }
