@@ -15,27 +15,32 @@ public class Laberint extends JFrame implements ActionListener {
         setSize(800,900);
         setLocationRelativeTo(null);//El laberint surt al centre
         setDefaultCloseOperation(Laberint.EXIT_ON_CLOSE);
-        pintaLaberint();
 
     }
 
-    private void pintaLaberint(){
+    @Override
+    public void paintComponents(Graphics g) {
         char[][] laberinto = Fitxers.lecturaLaberint();
         int y=0;
+        final int FILES=15;
+        final int COLUMNES=8;
+        Graphics2D g2d = (Graphics2D) g;
 
-        for (int i = 0; i < files; i++) {
+        for (int i = 0; i < FILES; i++) {
             int x=0;
-            for (int j = 0; j < columna; j++) {
+            for (int j = 0; j < COLUMNES; j++) {
                 Rectangle2D.Float r = new Rectangle2D.Float(x,y,40,40);
+                g2d.setColor(Color.black);
 
             }
         }
-
     }
 
     public static void main(String[] args) {
-        new Laberint().setVisible(true);
+        Laberint lab = new Laberint();
+        lab.setVisible(true);
         //Fitxers.lecturaLaberint();
+
     }
 
     @Override
